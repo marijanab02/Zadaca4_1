@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>Varijable</title>
+</head>
+<body>
+ <script type="text/javascript">
+    let kvadrat = function(x) {
+        if(typeof(x) === "number")
+            return x*x;
+        else
+            return "Pogreska";
+    }
+    document.write(kvadrat(5) + "<br/>");
+    document.write(kvadrat("rijec"));
+ </script>
+</body>
+</html>

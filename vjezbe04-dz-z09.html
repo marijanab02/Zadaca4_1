@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>Varijable</title>
+</head>
+<body>
+ <script type="text/javascript">
+    function savrsen(x){
+        for(var i=1; i<=x; i++){
+            var ostatak=0;
+            for(j=1; j<i; j++){
+                if(i%j==0){
+                    ostatak=ostatak+j;
+                }
+            }
+            if(ostatak==i){
+                document.write("Broj " + i + " je savrsen<br/>");
+            }
+        }
+    }
+    savrsen(29);
+ </script>
+</body>
+</html>

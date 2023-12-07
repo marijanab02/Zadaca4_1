@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>Varijable</title>
+</head>
+<body>
+ <script type="text/javascript">
+    polje= new Array(1,2,3,4,7,8,5,6,9, 55, 12, 4,85);
+    var duzina=polje.length;
+    document.write("Duzina: " + duzina);
+    polje.sort(function(a, b){return b-a});
+    document.write("<br/>Silazno sortirano polje: " + polje);
+    polje.sort(function(a, b){return a-b});
+    document.write("<br/>Uzlazno sortirano polje: " + polje);
+    polje.pop();
+    document.write("<br/>Polje bez zadnjeg clana: " + polje);
+    polje.push(19,22);
+    document.write("<br/>Polje s novim clanovima: " + polje);
+    var polje2 = ["Banana", "Orange", "Apple", "Mango"];
+
+    var polje_final = polje.concat(polje2);
+    document.write("<br/>Finalno polje: " + polje_final);
+ </script>
+</body>
+</html>
